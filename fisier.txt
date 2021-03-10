@@ -1,0 +1,8 @@
+Ceva
+Incarcare pe git 
+
+git status --  vede daca ai fisiere de incarcat sau nu 
+git add  nume fisier  (fisier.txt)
+git status
+git commit -m "Orice mesaj"  ("Am incarcat lab 1")
+git push
