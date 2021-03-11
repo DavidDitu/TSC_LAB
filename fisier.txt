@@ -6,3 +6,6 @@ git add  nume fisier  (fisier.txt)
 git status
 git commit -m "Orice mesaj"  ("Am incarcat lab 1")
 git push
+
+
+Am incARCAT CHEIA
