@@ -15,21 +15,23 @@
 # do run.do
 # 1
 # Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
-# Start time: 18:10:50 on Apr 01,2021
+# Start time: 21:56:57 on Apr 08,2021
 # vlog -reportprogress 300 -sv -timescale 1ps/1ps -work work -f sources.txt 
 # -- Compiling package instr_register_pkg
 # -- Compiling module instr_register
 # -- Importing package instr_register_pkg
 # -- Compiling interface tb_ifc
 # -- Compiling module instr_register_test
+# ** Warning: ../lab02_clocking_blocks/instr_register_test.sv(112): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: ../lab02_clocking_blocks/instr_register_test.sv(139): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # -- Compiling module top
 # 
 # Top level modules:
 # 	top
-# End time: 18:10:50 on Apr 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# End time: 21:56:57 on Apr 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim -novopt -quiet -nocoverage "+notimingchecks" "+nowarnTSCALE" -sva top 
-# Start time: 18:10:50 on Apr 01,2021
+# Start time: 21:56:57 on Apr 08,2021
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # Refreshing C:/Users/ditu_/Desktop/TSC_LAB DESKTOP/lab5/sim/work.top
 # Refreshing C:/Users/ditu_/Desktop/TSC_LAB DESKTOP/lab5/sim/work.instr_register_pkg
@@ -47,37 +49,37 @@
 # Reseting the instruction register...
 # 
 # Writing values to register stack...
-# Writing to register location 0: 
-#   opcode = 1 (PASSA)
+# Writing to register location x: 
+#   opcode = 6 (DIV)
 #   operand_a = -12
 #   operand_b = 7
 # 
-# Writing to register location 1: 
-#   opcode = 0 (ZERO)
-#   operand_a = -9
-#   operand_b = 1
+# Writing to register location x: 
+#   opcode = 4 (SUB)
+#   operand_a = -8
+#   operand_b = 13
 # 
-# Writing to register location 2: 
-#   opcode = 7 (MOD)
-#   operand_a = -15
-#   operand_b = 8
+# Writing to register location x: 
+#   opcode = 6 (DIV)
+#   operand_a = 14
+#   operand_b = 1
 # 
 # 
 # Reading back the same register locations written...
 # Read from register location 0: 
-#   opcode = 1 (PASSA)
-#   operand_a = -12
-#   operand_b = 7
+#   opcode = x ()
+#   operand_a = x
+#   operand_b = x
 # 
 # Read from register location 1: 
 #   opcode = 0 (ZERO)
-#   operand_a = -9
-#   operand_b = 1
+#   operand_a = 0
+#   operand_b = 0
 # 
 # Read from register location 2: 
-#   opcode = 7 (MOD)
-#   operand_a = -15
-#   operand_b = 8
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
 # 
 # 
 # ***********************************************************
@@ -86,12 +88,12 @@
 # *  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  *
 # ***********************************************************
 # 
-# ** Note: $finish    : ../lab02_clocking_blocks/instr_register_test.sv(119)
+# ** Note: $finish    : ../lab02_clocking_blocks/instr_register_test.sv(178)
 #    Time: 160 ns  Iteration: 1  Instance: /top/test
 # 1
-# Break in Task instr_register_test/Monitor::read_results at ../lab02_clocking_blocks/instr_register_test.sv line 119
+# Break in Task instr_register_test/Monitor::read_results at ../lab02_clocking_blocks/instr_register_test.sv line 178
 # Simulation Breakpoint: 1
-# Break in Task instr_register_test/Monitor::read_results at ../lab02_clocking_blocks/instr_register_test.sv line 119
+# Break in Task instr_register_test/Monitor::read_results at ../lab02_clocking_blocks/instr_register_test.sv line 178
 # MACRO ./run.do PAUSED at line 45
-# End time: 18:11:37 on Apr 01,2021, Elapsed time: 0:00:47
+# End time: 21:57:23 on Apr 08,2021, Elapsed time: 0:00:26
 # Errors: 0, Warnings: 1
