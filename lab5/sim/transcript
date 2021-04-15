@@ -1,4 +1,8 @@
 # Reading C:/modeltech64_10.6d/tcl/vsim/pref.tcl
+# 
+# 
+# 
+# 
 # //  ModelSim SE-64 10.6d Feb 24 2018
 # //
 # //  Copyright 1991-2018 Mentor Graphics Corporation
@@ -15,85 +19,28 @@
 # do run.do
 # 1
 # Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
-# Start time: 21:56:57 on Apr 08,2021
+# Start time: 20:14:50 on Apr 15,2021
 # vlog -reportprogress 300 -sv -timescale 1ps/1ps -work work -f sources.txt 
 # -- Compiling package instr_register_pkg
 # -- Compiling module instr_register
 # -- Importing package instr_register_pkg
 # -- Compiling interface tb_ifc
 # -- Compiling module instr_register_test
-# ** Warning: ../lab02_clocking_blocks/instr_register_test.sv(112): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# ** Warning: ../lab02_clocking_blocks/instr_register_test.sv(139): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Error: ../lab02_clocking_blocks/instr_register_test.sv(109): Could not find Coverpoint bin 'cov_3.val_op_A_poz' in local scope. Please provide a valid Coverpoint bin.
+# ** Warning: ../lab02_clocking_blocks/instr_register_test.sv(172): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: ../lab02_clocking_blocks/instr_register_test.sv(177): (vlog-2240) Treating stand-alone use of function 'assign_signals' as an implicit VOID cast.
+# ** Warning: ../lab02_clocking_blocks/instr_register_test.sv(185): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: ../lab02_clocking_blocks/instr_register_test.sv(190): (vlog-2240) Treating stand-alone use of function 'assign_signals' as an implicit VOID cast.
 # -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 21:56:57 on Apr 08,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# vsim -novopt -quiet -nocoverage "+notimingchecks" "+nowarnTSCALE" -sva top 
-# Start time: 21:56:57 on Apr 08,2021
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# Refreshing C:/Users/ditu_/Desktop/TSC_LAB DESKTOP/lab5/sim/work.top
-# Refreshing C:/Users/ditu_/Desktop/TSC_LAB DESKTOP/lab5/sim/work.instr_register_pkg
-# Refreshing C:/Users/ditu_/Desktop/TSC_LAB DESKTOP/lab5/sim/work.tb_ifc
-# Refreshing C:/Users/ditu_/Desktop/TSC_LAB DESKTOP/lab5/sim/work.instr_register_test
-# Refreshing C:/Users/ditu_/Desktop/TSC_LAB DESKTOP/lab5/sim/work.instr_register
-# 
-# 
-# ***********************************************************
-# *  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  *
-# *  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     *
-# *  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  *
-# *******************************************************
-# 
-# Reseting the instruction register...
-# 
-# Writing values to register stack...
-# Writing to register location x: 
-#   opcode = 6 (DIV)
-#   operand_a = -12
-#   operand_b = 7
-# 
-# Writing to register location x: 
-#   opcode = 4 (SUB)
-#   operand_a = -8
-#   operand_b = 13
-# 
-# Writing to register location x: 
-#   opcode = 6 (DIV)
-#   operand_a = 14
-#   operand_b = 1
-# 
-# 
-# Reading back the same register locations written...
-# Read from register location 0: 
-#   opcode = x ()
-#   operand_a = x
-#   operand_b = x
-# 
-# Read from register location 1: 
-#   opcode = 0 (ZERO)
-#   operand_a = 0
-#   operand_b = 0
-# 
-# Read from register location 2: 
-#   opcode = 0 (ZERO)
-#   operand_a = 0
-#   operand_b = 0
-# 
-# 
-# ***********************************************************
-# *  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  *
-# *  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     *
-# *  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  *
-# ***********************************************************
-# 
-# ** Note: $finish    : ../lab02_clocking_blocks/instr_register_test.sv(178)
-#    Time: 160 ns  Iteration: 1  Instance: /top/test
-# 1
-# Break in Task instr_register_test/Monitor::read_results at ../lab02_clocking_blocks/instr_register_test.sv line 178
-# Simulation Breakpoint: 1
-# Break in Task instr_register_test/Monitor::read_results at ../lab02_clocking_blocks/instr_register_test.sv line 178
-# MACRO ./run.do PAUSED at line 45
-# End time: 21:57:23 on Apr 08,2021, Elapsed time: 0:00:26
-# Errors: 0, Warnings: 1
+# End time: 20:14:50 on Apr 15,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 4
+# ** Error: C:/modeltech64_10.6d/win64/vlog failed.
+# Error in macro ./run.do line 20
+# C:/modeltech64_10.6d/win64/vlog failed.
+#     while executing
+# "vlog -sv -timescale "1ps/1ps" -work work       -f sources.txt"
+#     invoked from within
+# "if {$compile_on || [batch_mode] == 0} {
+#   vlib work
+#   vlog -sv -timescale "1ps/1ps" -work work       -f sources.txt
+# }"
